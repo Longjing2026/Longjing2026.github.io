@@ -92,7 +92,7 @@ function clickfunc(i,j){
             }
             return;
         }
-        document.getElementById('tips').innerText="请选择相同类型的动物";
+        document.getElementById('tips').innerText="请选择相同类型的方块";
         //特效？
     }
 }
