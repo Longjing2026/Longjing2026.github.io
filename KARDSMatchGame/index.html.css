@@ -1,0 +1,67 @@
+#background-image{
+    border: none;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#root{
+    overflow: clip;
+}
+
+.text{
+    color:white;
+    text-align: center;
+    margin:0px
+}
+
+.game-block{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    top: 5%;/*更好的实现边缘进框?*/
+    border-radius: 8px;
+    border: 4px solid black;
+}
+
+#game-content{
+    aspect-ratio: 3/4;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#game-box{
+    position: static;
+    height: 80%;
+}
+/*content在box外面*/
+
+/*#game-box{*/
+    /*position: absolute;
+    width:67.5%;
+    aspect-ratio: 3/4;
+    left:16.25%;*/
+    /*height: 50%;/*  aspect-ratio要求只定一边。分开处理？*/
+
+
+/*一下是AI生成的*/
+html, body {
+    margin: 0;          /* 移除默认外边距 */
+    padding: 0;         /* 移除默认内边距 */
+    box-sizing: border-box; /* 推荐：防止padding撑破布局 */
+    height: 100dvh; /* 使用动态视口高度，避开移动端地址栏问题 */
+    overflow: hidden;
+}
+
+.wrapper{
+    container-type: size;
+}
+
+.content {
+    width: 100cqw;
+    height: 100cqh;
+}
