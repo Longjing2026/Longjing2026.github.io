@@ -8,3 +8,8 @@ const TypeNum=4;
 const AudioType='.mp3';
 const AudioV=0.5;
 const AudioS=1;
+if(isMobile){
+    addLink('./index.html.mobile.css');
+    console.log('已检测到移动端！')
+    //移动端排版匹配
+}
