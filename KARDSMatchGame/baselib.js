@@ -24,3 +24,23 @@ const RandInt=(min,max)=>{
 const RandInt0=(min,max)=>{
     return Math.floor(Math.random()*(max-min))+min;
 }
+
+
+
+//来自网络
+const isMobile=(/Mobi|Android|iPhone/i.test(navigator.userAgent));
+
+function addLink(url) {
+  var link = document.createElement("link");
+  link.rel = "stylesheet";
+  link.type = "text/css";
+  link.href = url;
+  document.getElementsByTagName("head")[0].appendChild(link);
+}
+function addScript(url) {
+  var newscript = document.createElement('script');
+  newscript.setAttribute('type','text/javascript');
+  newscript.setAttribute('src',url);
+  var head = document.getElementsByTagName('head')[0];
+  head.appendChild(newscript);
+}
